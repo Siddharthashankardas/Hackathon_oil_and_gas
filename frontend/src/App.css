@@ -1,0 +1,85 @@
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.header {
+  background: #10243b;
+  color: white;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #bdcbd9;
+}
+
+.status {
+  background: #203d56;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.dashboard {
+  padding: 40px;
+}
+
+.welcome {
+  margin-bottom: 30px;
+}
+
+.welcome h2 {
+  font-size: 26px;
+}
+
+.welcome p {
+  color: #667085;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e1e7ef;
+  min-height: 120px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #667085;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
