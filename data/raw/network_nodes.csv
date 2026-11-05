@@ -1,0 +1,8 @@
+node_id,node_type,distance_km,nominal_pressure_bar,elevation_m,distance_reference,elevation_datum,data_provenance,engineering_approval_status
+N01,RECEIPT,0,68,36.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N02,JUNCTION,48,65,34.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N03,COMPRESSOR,103,63,31.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N04,JUNCTION,162,61,29.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N05,DELIVERY,218,58,27.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N06,JUNCTION,130,62,30.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved
+N07,DELIVERY,188,57,26.0,network_chainage_km,POC_ASSUMPTION_DATUM,synthetic_poc,not_engineering_approved

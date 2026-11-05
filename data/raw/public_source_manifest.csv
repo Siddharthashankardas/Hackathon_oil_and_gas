@@ -1,0 +1,7 @@
+source,url,public_data,poc_use,join_key,caution
+US EIA Open Data,https://www.eia.gov/opendata/,"Natural gas consumption, storage, flows, prices",demand/weather context; macro gas balance,date/region,Public contextual enrichment; not OT truth
+FERC Natural Gas,https://www.ferc.gov/industries-data/natural-gas,"Tariffs, pipeline/LNG filings and public operational/commercial information",nominations/capacity/regulatory context,pipeline/location/date,Formats vary by pipeline/filing
+PHMSA Pipeline Data,https://www.phmsa.dot.gov/data-and-statistics/pipeline,Pipeline incidents and annual/operator statistics,integrity/event labels and risk context,operator/location/date,"Historical regulatory data, not linepack telemetry"
+NOAA NCEI,https://www.ncei.noaa.gov/,Weather and climate observations,temperature-driven demand features,station/date-time,Station coverage/resolution varies
+Copernicus ERA5,https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels,Global weather reanalysis,weather features for demand scenarios,lat/lon/date-time,Registration/terms apply
+ENTSOG Transparency Platform,https://transparency.entsog.eu/,European gas flows/capacity/interconnection data,public gas-flow and capacity validation context,point/date-time,Europe-focused; definitions vary

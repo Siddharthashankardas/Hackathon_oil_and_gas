@@ -1,0 +1,7 @@
+scenario_id,split,scenario_type,description,expected_behavior
+V01,validation,normal_day,Baseline periods with GOOD telemetry and compressor available,feasible; no injected challenge condition
+V02,validation,demand_ramp,Demand ramp marker on 2025-03-10 06:00-13:00 UTC,replay forecast and assess against configured POC constraints
+C01,challenge,stale_sensor,Stale telemetry at 2025-03-17 08:00-12:00 and 2025-03-23 03:00-06:00 UTC,block recommendations until critical telemetry is fresh
+C02,challenge,low_pressure,Injected N07 pressure values during 2025-03-25 10:00-15:00 UTC,raise POC pressure constraint event; threshold is test-only
+C03,challenge,linepack_low,Injected low linepack values during 2025-03-28 06:00-11:00 UTC,raise POC linepack constraint event; floor is test-only
+C04,challenge,compressor_outage,Compressor unavailable during 2025-03-20 08:00-15:00 UTC,re-evaluate with compressor unavailable; performance model not supplied

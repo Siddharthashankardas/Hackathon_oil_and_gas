@@ -1,0 +1,18 @@
+field,dtype,role,description
+timestamp_utc,datetime_utc,time_key,UTC timestamp for hourly sample
+ambient_temperature_c,float,context_feature,"Synthetic ambient temperature, degrees C"
+receipt_nomination_ksm3_h,float,boundary_input,"Synthetic receipt nomination, thousand standard cubic metres per hour"
+delivery_demand_ksm3_h,float,boundary_input,"Synthetic delivery demand, thousand standard cubic metres per hour"
+mainline_flow_ksm3_h,float,telemetry_feature,Synthetic flow; not from calibrated hydraulic solver
+pressure_n01_bar,float,telemetry_feature,Synthetic N01 pressure in bar; not approved operating limit
+pressure_n05_bar,float,telemetry_feature,Synthetic N05 pressure in bar; not approved operating limit
+pressure_n07_bar,float,telemetry_feature,Synthetic N07 pressure in bar; not approved operating limit
+compressor_available,int_bool,equipment_state,"1 available, 0 unavailable; synthetic state"
+linepack_ksm3,float,inventory_poc_truth,Hourly accounting inventory; challenge injection may override
+imbalance_ksm3_h,float,derived_boundary_balance,Receipt minus delivery; positive increases inventory
+constraint_event,int_bool,poc_test_label,"Injected low-pressure/low-linepack test label, not certified alarm"
+quality_flag,enum,data_quality,GOOD or STALE; stale critical data must fail closed
+split,enum,dataset_partition,"train, validation or challenge"
+scenario_id,string,scenario_marker,Scenario marker for replay and test assertions
+linepack_balance_method,string,lineage,Method used to derive inventory
+linepack_truth_status,string,lineage,"Synthetic accounting-consistent, not hydraulic simulation"

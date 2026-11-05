@@ -1,0 +1,7 @@
+segment_id,from_node,to_node,length_km,diameter_m,roughness_mm,roughness_m,data_provenance,engineering_approval_status,pressure_limit_status
+P01,N01,N02,48,0.9,0.018,1.7999999999999997e-05,synthetic_poc,not_engineering_approved,not_provided
+P02,N02,N03,55,0.9,0.018,1.7999999999999997e-05,synthetic_poc,not_engineering_approved,not_provided
+P03,N03,N04,59,0.8,0.02,2e-05,synthetic_poc,not_engineering_approved,not_provided
+P04,N04,N05,56,0.75,0.02,2e-05,synthetic_poc,not_engineering_approved,not_provided
+P05,N03,N06,32,0.7,0.02,2e-05,synthetic_poc,not_engineering_approved,not_provided
+P06,N06,N07,58,0.65,0.022,2.2e-05,synthetic_poc,not_engineering_approved,not_provided

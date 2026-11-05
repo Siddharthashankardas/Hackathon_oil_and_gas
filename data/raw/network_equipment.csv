@@ -1,0 +1,2 @@
+equipment_id,equipment_type,node_id,availability_field,performance_data_status,pressure_ratio_limit,power_limit_kw,head_limit,data_provenance,notes
+COMP_N03,COMPRESSOR,N03,compressor_available,not_provided,,,,synthetic_poc,Topology placeholder only; do not calculate compressor performance without approved curves and limits.

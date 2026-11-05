@@ -1,0 +1,10 @@
+parameter,value_or_rule,basis,approval_status
+network_topology,Fictional 7-node / 6-segment network retained,synthetic topology,not_engineering_approved
+distance_km,Interpreted as network chainage; P05 chainage delta is 27 km vs segment length 32 km,interpretation requiring review,not_engineering_approved
+roughness,roughness_mm divided by 1000 to derive roughness_m,unit conversion,not_engineering_approved
+linepack,Initial inventory plus cumulative hourly receipt minus delivery,POC accounting identity,not_hydraulic_simulation
+initial_linepack_ksm3,1046.19,first supplied synthetic value,synthetic_only
+low_pressure_test_threshold_bar,55.0,illustrative challenge trigger only,not_operating_limit
+low_linepack_test_floor_ksm3,784.643,illustrative challenge trigger only,not_operating_limit
+compressor_performance,"No compressor map, power/head envelope or ratio limits supplied",missing engineering input,not_available
+hydraulic_solver,No validated solver/EOS/thermal model selected,open design decision,not_selected
